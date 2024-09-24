@@ -8,21 +8,13 @@ public class ExamRegistry {
     private Map<String, Integer> examScores = new HashMap<>();
 
     // Enroll a student in an exam
-    public void enroll(Student student, Exam exam) {
-        List<Student> students = examEnrollment.getOrDefault(exam, new ArrayList<>());
-        if (!students.contains(student)) {
-            students.add(student);
-            examEnrollment.put(exam, students);
-        }
+    public void enrol(Student student, Exam exam) {
+        // TODO: Implement the method to address unit test requirements
     }
 
     // Record a student's score in an exam
     public void recordScore(Student student, Exam exam, int score) throws InvalidScoreException {
-        if (score < 0 || score > 100) {
-            throw new InvalidScoreException("Invalid score: " + score);
-        }
-        String key = student.getId() + "-" + exam.getCode();
-        examScores.put(key, score);
+        // TODO: Implement the method to address unit test requirements
     }
 
     // Get the student's score for an exam

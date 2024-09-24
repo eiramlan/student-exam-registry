@@ -9,10 +9,7 @@ public class StudentRegistry {
 
     // Register a student
     public void register(Student student) throws StudentAlreadyRegisteredException {
-        if (students.containsKey(student.getId())) {
-            throw new StudentAlreadyRegisteredException("Student already registered");
-        }
-        students.put(student.getId(), student);
+        // TODO: Implement the method to address unit test requirements
     }
 
     // Check if a student is registered
