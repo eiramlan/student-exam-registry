@@ -10,6 +10,9 @@ buildNumber.properties
 # https://github.com/takari/maven-wrapper#usage-without-binary-jar
 .mvn/wrapper/maven-wrapper.jar
 
+# Ignore all .class files (Java bytecode)
+*.class
+
 # Eclipse m2e generated files
 # Eclipse Core
 .project
